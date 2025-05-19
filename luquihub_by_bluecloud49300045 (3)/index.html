@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luquihub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tabs-bar">
+        <div id="tabs-container">
+            <!-- Tabs will be dynamically inserted here -->
+        </div>
+        <button id="add-tab-button" title="Add new tab">+</button>
+        <button id="settings-button" title="Settings">⚙️</button>
+    </div>
+    <div id="tab-content-area">
+        <!-- Active tab's content will be loaded here -->
+    </div>
+
+    <div id="settings-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal-button" title="Close settings">&times;</span>
+            <h2>Settings</h2>
+            <div class="setting-item">
+                <label for="theme-select">Theme:</label>
+                <select id="theme-select">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                </select>
+            </div>
+            <!-- Future settings can be added here -->
+            <button id="save-settings-button">Apply & Save</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
